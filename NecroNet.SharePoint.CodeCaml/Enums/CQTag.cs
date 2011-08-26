@@ -1,0 +1,37 @@
+﻿namespace NecroNet.SharePoint.CodeCaml.Enums
+{
+	internal enum CQTag
+	{
+		Eq,
+		Leq,
+		Neq,
+		Geq,
+		Contains,
+		BeginsWith,
+		DateRangesOverlap,
+		In,
+		Includes,
+		IsNull,
+		IsNotNull,
+		Lt,
+		Gt,
+		NotIncludes,
+		Membership,
+		Where,
+		OrderBy,
+		FieldRef,
+		Value,
+		Values,
+		And,
+		Or,
+		Today,
+		Now,
+		Month,
+		UserID,
+		Webs,
+		List,
+		WithIndex,
+		Lists,
+		GroupBy
+	}
+}

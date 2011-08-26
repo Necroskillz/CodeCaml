@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{572092DB-F5E6-4A88-A1DD-79C72481A80F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NecroNet.SharePoint.CodeCaml</RootNamespace>
+    <AssemblyName>NecroNet.SharePoint.CodeCaml</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CodeCaml.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CamlBuilder\CamlTag.cs" />
+    <Compile Include="ConstraintInterfaces\ICQElement.cs" />
+    <Compile Include="ConstraintInterfaces\ICQListAttributesSetup.cs" />
+    <Compile Include="ConstraintInterfaces\ICQListElement.cs" />
+    <Compile Include="ConstraintInterfaces\ICQOperatorElementFieldRef.cs" />
+    <Compile Include="ConstraintInterfaces\ICQOperatorElementValue.cs" />
+    <Compile Include="ConstraintInterfaces\ICQOperatorElement.cs" />
+    <Compile Include="CQValue.cs" />
+    <Compile Include="Elements\Base\CQAttributeAttribute.cs" />
+    <Compile Include="Elements\CQAndElement.cs" />
+    <Compile Include="CQ.cs" />
+    <Compile Include="Elements\CQBeginsWithElement.cs" />
+    <Compile Include="Elements\CQContainsElement.cs" />
+    <Compile Include="Elements\CQDateRangesOverlapElement.cs" />
+    <Compile Include="Elements\Base\CQElement.cs" />
+    <Compile Include="Elements\CQEqElement.cs" />
+    <Compile Include="Elements\CQFieldRefElement.cs" />
+    <Compile Include="Elements\CQGeqElement.cs" />
+    <Compile Include="Elements\CQGroupByElement.cs" />
+    <Compile Include="Elements\CQGtElement.cs" />
+    <Compile Include="Elements\CQIncludesElement.cs" />
+    <Compile Include="Elements\CQInElement.cs" />
+    <Compile Include="Elements\CQIsNotNullElement.cs" />
+    <Compile Include="Elements\CQIsNullElement.cs" />
+    <Compile Include="Elements\CQLeqElement.cs" />
+    <Compile Include="Elements\CQListsAttributes.cs" />
+    <Compile Include="Elements\CQListElement.cs" />
+    <Compile Include="Elements\CQListsElement.cs" />
+    <Compile Include="Elements\CQLtElement.cs" />
+    <Compile Include="Elements\CQMembershipElement.cs" />
+    <Compile Include="Elements\CQMonthElement.cs" />
+    <Compile Include="Elements\CQNeqElement.cs" />
+    <Compile Include="Elements\CQNotIncludesElement.cs" />
+    <Compile Include="Elements\Base\CQOperatorElement.cs" />
+    <Compile Include="Elements\CQNowElement.cs" />
+    <Compile Include="Elements\CQOrderByElement.cs" />
+    <Compile Include="Elements\CQOrElement.cs" />
+    <Compile Include="ConstraintInterfaces\ICQFieldRefSetup.cs" />
+    <Compile Include="Elements\CQTodayElement.cs" />
+    <Compile Include="Elements\CQUserIDElement.cs" />
+    <Compile Include="Elements\CQValuesElement.cs" />
+    <Compile Include="Elements\CQViewAttributes.cs" />
+    <Compile Include="Elements\CQWebsElement.cs" />
+    <Compile Include="Elements\CQWhereElement.cs" />
+    <Compile Include="Elements\CQWithIndexElement.cs" />
+    <Compile Include="Enums\CQFunctionType.cs" />
+    <Compile Include="Enums\CQGroupByOption.cs" />
+    <Compile Include="Enums\CQListBaseType.cs" />
+    <Compile Include="Enums\CQMembershipType.cs" />
+    <Compile Include="Enums\CQOrderByOption.cs" />
+    <Compile Include="Enums\CQQueryScope.cs" />
+    <Compile Include="Enums\CQTag.cs" />
+    <Compile Include="Enums\CQValueOption.cs" />
+    <Compile Include="Enums\CQValueType.cs" />
+    <Compile Include="Enums\CQViewScope.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Elements\CQValueElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeCaml.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

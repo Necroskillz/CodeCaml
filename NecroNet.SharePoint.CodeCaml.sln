@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NecroNet.SharePoint.CodeCaml", "NecroNet.SharePoint.CodeCaml\NecroNet.SharePoint.CodeCaml.csproj", "{572092DB-F5E6-4A88-A1DD-79C72481A80F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NecroNet.SharePoint.CodeCaml.Tests", "NecroNet.SharePoint.CodeCaml.Tests\NecroNet.SharePoint.CodeCaml.Tests.csproj", "{F54078DE-9593-4F49-AD78-B1B034389651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572092DB-F5E6-4A88-A1DD-79C72481A80F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572092DB-F5E6-4A88-A1DD-79C72481A80F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572092DB-F5E6-4A88-A1DD-79C72481A80F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572092DB-F5E6-4A88-A1DD-79C72481A80F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54078DE-9593-4F49-AD78-B1B034389651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54078DE-9593-4F49-AD78-B1B034389651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54078DE-9593-4F49-AD78-B1B034389651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54078DE-9593-4F49-AD78-B1B034389651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
