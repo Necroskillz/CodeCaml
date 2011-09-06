@@ -1,3 +1,15 @@
 ==================
 =====CodeCaml=====
 ==================
+
+version - 0.2
+
+Read documentation here: https://github.com/Necroskillz/CodeCaml/wiki/CodeCaml
+
+Change log
+==========
+
+9/6/2011 - v0.2
+
+- fixed Lists method to return string instead of CQListsElement
+- added attribute 'Nullable' to FieldRef element

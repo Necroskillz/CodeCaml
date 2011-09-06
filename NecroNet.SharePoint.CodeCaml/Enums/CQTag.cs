@@ -1,6 +1,6 @@
 ﻿namespace NecroNet.SharePoint.CodeCaml.Enums
 {
-	internal enum CQTag
+	public enum CQTag
 	{
 		Eq,
 		Leq,

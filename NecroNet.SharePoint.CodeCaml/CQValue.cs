@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using NecroNet.SharePoint.CodeCaml.Elements;
+﻿using NecroNet.SharePoint.CodeCaml.Elements;
 
 namespace NecroNet.SharePoint.CodeCaml
 {

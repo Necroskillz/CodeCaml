@@ -1,4 +1,3 @@
-using System;
 using NecroNet.SharePoint.CodeCaml.Elements.Base;
 using NecroNet.SharePoint.CodeCaml.Enums;
 

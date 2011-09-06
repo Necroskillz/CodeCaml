@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NecroNet.SharePoint.CodeCaml.Enums;
-
-namespace NecroNet.SharePoint.CodeCaml.ConstraintInterfaces
+﻿namespace NecroNet.SharePoint.CodeCaml.ConstraintInterfaces
 {
 	public interface ICQListsAttributesSetup
 	{

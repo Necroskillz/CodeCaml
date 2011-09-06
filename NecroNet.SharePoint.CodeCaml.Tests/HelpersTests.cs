@@ -36,13 +36,14 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 
 			var fieldRef = CQ.FieldRef(FieldId)
 				.Alias(alias)
-				.Ascending(false)
+				.Ascending(true)
 				.CreateURL(url)
 				.DisplayName(displayName)
-				.Explicit(false)
+				.Explicit(true)
 				.Format(format)
 				.Key(key)
 				.LookupId(true)
+				.Nullable(true)
 				.RefType(refType)
 				.ShowField(showField)
 				.TextOnly(true)
@@ -57,8 +58,9 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 			Assert.That(fieldRef.Key, Is.EqualTo(key));
 			Assert.That(fieldRef.RefType, Is.EqualTo(refType));
 			Assert.That(fieldRef.ShowField, Is.EqualTo(showField));
-			Assert.That(fieldRef.Ascending, Is.False);
-			Assert.That(fieldRef.Explicit, Is.False);
+			Assert.That(fieldRef.Ascending, Is.True);
+			Assert.That(fieldRef.Explicit, Is.True);
+			Assert.That(fieldRef.Nullable, Is.True);
 			Assert.That(fieldRef.LookupId, Is.True);
 			Assert.That(fieldRef.TextOnly, Is.True);
 			Assert.That(fieldRef.Type, Is.EqualTo(CQFunctionType.AVG));

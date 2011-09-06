@@ -27,6 +27,7 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 			element3.Explicit = false;
 			element3.Format = "format";
 			element3.Key = "Primary";
+			element3.Nullable = true;
 			element3.LookupId = true;
 			element3.RefType = "ref";
 			element3.ShowField = "show";
@@ -42,7 +43,7 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 			Assert.That(element2.GetCaml(), Is.EqualTo(Expected));
 
 			Expected = "<FieldRef ID='" + FieldId +
-			           "' Alias='alias' Ascending='TRUE' CreateURL='url' DisplayName='display' Explicit='FALSE' Format='format' Key='Primary' RefType='ref' ShowField='show' TextOnly='FALSE' Type='COUNT' LookupId='TRUE' />";
+			           "' Alias='alias' Ascending='TRUE' CreateURL='url' DisplayName='display' Explicit='FALSE' Format='format' Key='Primary' Nullable='TRUE' RefType='ref' ShowField='show' TextOnly='FALSE' Type='COUNT' LookupId='TRUE' />";
 
 			Assert.That(element3.GetCaml(), Is.EqualTo(Expected));
 		}

@@ -9,6 +9,7 @@ namespace NecroNet.SharePoint.CodeCaml.ConstraintInterfaces
 		ICQFieldRefSetup Explicit(bool @explicit);
 		ICQFieldRefSetup Format(string format);
 		ICQFieldRefSetup Key(string key);
+		ICQFieldRefSetup Nullable(bool nullable);
 		ICQFieldRefSetup RefType(string refType);
 		ICQFieldRefSetup ShowField(string showField);
 		ICQFieldRefSetup TextOnly(bool textOnly);

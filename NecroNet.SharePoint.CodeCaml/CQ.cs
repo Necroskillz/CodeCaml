@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Globalization;
-using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 using NecroNet.SharePoint.CodeCaml.ConstraintInterfaces;
 using NecroNet.SharePoint.CodeCaml.Elements;
-using NecroNet.SharePoint.CodeCaml.Enums;
 
 namespace NecroNet.SharePoint.CodeCaml
 {
@@ -118,17 +115,17 @@ namespace NecroNet.SharePoint.CodeCaml
 		/// <summary>
 		/// Returns &lt;Lists&gt; element to be used as List parameter of SharePoint data query.
 		/// </summary>
-		public static CQListsElement Lists(params ICQListElement[] elements)
+		public static string Lists(params ICQListElement[] elements)
 		{
-			return new CQListsElement(elements);
+			return new CQListsElement(elements).GetCaml();
 		}
 
 		/// <summary>
 		/// Returns &lt;Lists&gt; element with specified attributes (configured by CQ.ListsAttributes), to be used as List parameter of SharePoint data query.
 		/// </summary>
-		public static CQListsElement Lists(ICQListsAttributesSetup attributes, params ICQListElement[] elements)
+		public static string Lists(ICQListsAttributesSetup attributes, params ICQListElement[] elements)
 		{
-			return new CQListsElement(attributes, elements);
+			return new CQListsElement(attributes, elements).GetCaml();
 		}
 
 		/// <summary>

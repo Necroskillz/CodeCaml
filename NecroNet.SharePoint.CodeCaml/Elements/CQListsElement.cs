@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using NecroNet.SharePoint.CodeCaml.ConstraintInterfaces;
 using NecroNet.SharePoint.CodeCaml.Elements.Base;
 using NecroNet.SharePoint.CodeCaml.Enums;

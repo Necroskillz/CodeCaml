@@ -1,5 +1,4 @@
 using System;
-using NecroNet.SharePoint.CodeCaml.CamlBuilder;
 using NecroNet.SharePoint.CodeCaml.ConstraintInterfaces;
 using NecroNet.SharePoint.CodeCaml.Elements.Base;
 using NecroNet.SharePoint.CodeCaml.Enums;
@@ -44,6 +43,9 @@ namespace NecroNet.SharePoint.CodeCaml.Elements
 
 		[CQAttribute]
 		public string Key { get; set; }
+
+		[CQAttribute]
+		public bool? Nullable { get; set; }
 
 		[CQAttribute]
 		public string RefType { get; set; }
@@ -104,6 +106,12 @@ namespace NecroNet.SharePoint.CodeCaml.Elements
 		ICQFieldRefSetup ICQFieldRefSetup.Key(string key)
 		{
 			Key = key;
+			return this;
+		}
+
+		ICQFieldRefSetup ICQFieldRefSetup.Nullable(bool nullable)
+		{
+			Nullable = nullable;
 			return this;
 		}
 

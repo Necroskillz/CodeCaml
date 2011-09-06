@@ -75,7 +75,7 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 
 			var lists = CQ.Lists(CQ.List(FieldId), CQ.WithIndex(FieldId, val));
 
-			Assert.That(lists.GetCaml(), Is.EqualTo(Expected));
+			Assert.That(lists, Is.EqualTo(Expected));
 		}
 
 		[Test]
@@ -90,7 +90,7 @@ namespace NecroNet.SharePoint.CodeCaml.Tests
 					CQ.List(FieldId)
 					);
 
-			Assert.That(lists.GetCaml(), Is.EqualTo(Expected));
+			Assert.That(lists, Is.EqualTo(Expected));
 		}
 	}
 }

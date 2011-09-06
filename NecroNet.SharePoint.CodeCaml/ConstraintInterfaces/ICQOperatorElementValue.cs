@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace NecroNet.SharePoint.CodeCaml.ConstraintInterfaces
+﻿namespace NecroNet.SharePoint.CodeCaml.ConstraintInterfaces
 {
 	public interface ICQOperatorElementValue : ICQElement
 	{

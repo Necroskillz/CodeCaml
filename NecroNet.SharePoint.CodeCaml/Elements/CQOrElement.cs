@@ -1,6 +1,3 @@
-using System;
-using System.Text;
-using NecroNet.SharePoint.CodeCaml.CamlBuilder;
 using NecroNet.SharePoint.CodeCaml.ConstraintInterfaces;
 using NecroNet.SharePoint.CodeCaml.Elements.Base;
 using NecroNet.SharePoint.CodeCaml.Enums;
